@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honda Tuning Culture</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: #0d0d0d;
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    header {
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1605559424843-9e4c228c60d8?auto=format&fit=crop&w=1400&q=80') center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        color: #ff2d2d;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #ccc;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        backdrop-filter: blur(10px);
+        padding: 15px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff2d2d;
+    }
+
+    section {
+        padding: 80px 10%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        border-left: 5px solid #ff2d2d;
+        padding-left: 10px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #1a1a1a;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(255,45,45,0.4);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        color: #ff2d2d;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background: #000;
+        text-align: center;
+        padding: 20px;
+        color: #777;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ff2d2d;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #cc0000;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#cars">Cars</a>
+    <a href="#tuning">Tuning</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Honda Tuning Culture</h1>
+    <p>Performance • Style • Precision</p>
+    <a href="#cars" class="btn">Explore Builds</a>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About</h2>
+    <p>
+        Welcome to the world of Honda tuning — where lightweight engineering meets high-revving performance.
+        From Civics to Integras, enthusiasts push the limits with turbo builds, engine swaps, and aggressive styling.
+    </p>
+</section>
+
+<section id="cars">
+    <h2 class="section-title">Iconic Cars</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Civic Type R</h3>
+                <p>Track-focused performance with aggressive aero and turbocharged power.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Integra DC2</h3>
+                <p>Legendary handling and the iconic B18C engine loved by tuners.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583267743846-5b9c82d1b1c2?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>S2000</h3>
+                <p>High-revving F20C engine and perfect 50:50 balance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tuning">
+    <h2 class="section-title">Tuning Culture</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1597007066704-67bf2068d5b2?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Engine Swaps</h3>
+                <p>K-series swaps dominate modern builds with insane power potential.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511910849309-0dffb1cde2a8?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Turbo Builds</h3>
+                <p>Boost your Honda to supercar levels with proper tuning.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80">
+            <div class="card-content">
+                <h3>Stance & Style</h3>
+                <p>Lowered suspension, camber, and aggressive fitment define the look.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Join the Culture</h2>
+    <p>Follow the passion. Build your dream Honda. Connect with the community.</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<footer>
+    <p>© 2026 Honda Tuning Culture | Built for enthusiasts</p>
+</footer>
+
+</body>
+</html>
